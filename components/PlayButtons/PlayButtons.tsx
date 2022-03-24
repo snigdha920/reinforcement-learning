@@ -1,6 +1,5 @@
 import React from 'react'
 import { playButtonsConfig } from './config'
-import styles from './PlayButtons.module.css'
 interface IPlayButtonProps {
   setPlayUrl: React.Dispatch<React.SetStateAction<string>>
 }
@@ -17,7 +16,7 @@ export function PlayButtons({ setPlayUrl }: IPlayButtonProps) {
           <button
             key={button.url}
             onClick={() => setPlayUrl(button.url)}
-            className={`${styles.outlineButton} ${styles.outlineBlue} block w-full`}
+            className={`py-2 my-4 h-12 border-2 border-[#10447e] block w-full rounded-full`}
           >
             {button.label}
           </button>
