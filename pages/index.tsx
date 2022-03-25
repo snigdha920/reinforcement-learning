@@ -15,10 +15,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-mario lg:bg-contain grid grid-cols-2 items-center gap-10 px-16 pb-16">
+      <main className="min-h-screen bg-mario lg:bg-contain grid grid-cols-3 items-center gap-10 px-16 pb-16">
+        <div className="col-span-2">
+          <ReactPlayer url={playUrl} width="100%" height="700px" />
+        </div>
         <PlayButtons setPlayUrl={setPlayUrl} />
-
-        <ReactPlayer url={playUrl} width="100%" />
       </main>
     </div>
   )

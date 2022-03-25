@@ -16,7 +16,7 @@ export function PlayButtons({ setPlayUrl }: IPlayButtonProps) {
           <button
             key={button.url}
             onClick={() => setPlayUrl(button.url)}
-            className={`py-2 my-4 h-12 border-2 border-[#10447e] block w-full rounded-full`}
+            className={`font-semibold py-2 my-4 h-12 border-4 ${button.color} block w-full rounded-full`}
           >
             {button.label}
           </button>
